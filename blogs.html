@@ -1,99 +1,97 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blogs</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blogs</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="styles.css">
 </head>
-
 <body class="bg-black text-white font-sans">
 <div class="fixed inset-0 pointer-events-none grid-bg opacity-30"></div>
-<header class="sticky top-0 z-40 bg-black/40 backdrop-blur-xl border-b border-white/10">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between">
-    <a href="index.html" class="font-semibold">Tayyaba Shaikh</a>
-<nav class="flex gap-6 text-sm text-emerald-50/80">
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="skills.html">Skills</a>
-        <a href="journey.html">Journey</a>
-        <a href="facts.html">Facts</a>
-        <a href="links.html">Links</a>
-        <a href="blogs.html">Blogs</a>
-        <a href="certificates.html">Certificates</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-  </div>
-</header>
-
-<main class="max-w-7xl mx-auto px-6 py-16">
-  <h1 class="text-4xl font-semibold mb-10">Blogs</h1>
-  <div class="grid md:grid-cols-2 gap-6">
-    
-    <div onclick="openBlog(0)" class="cursor-pointer glass rounded-2xl overflow-hidden border border-white/10 hover:scale-[1.02] transition">
-      <img src="bored.png" class="h-48 w-full object-cover">
-      <div class="p-6">
-        <h2 class="text-xl font-semibold">Are We Getting Bored More Easily Than Before?</h2>
-        <p class="text-white/60 mt-3">A reflection on attention, boredom, and modern digital habits...</p>
-      </div>
-    </div>
-    
-    <div onclick="openBlog(1)" class="cursor-pointer glass rounded-2xl overflow-hidden border border-white/10 hover:scale-[1.02] transition">
-      <img src="EB.jpg" class="h-48 w-full object-cover">
-      <div class="p-6">
-        <h2 class="text-xl font-semibold">I tried making a Spotify clone</h2>
-        <p class="text-white/60 mt-3">But ended up making this instead...</p>
-      </div>
-    </div>
-        <div onclick="openBlog(2)" class="cursor-pointer glass rounded-2xl overflow-hidden border border-white/10 hover:scale-[1.02] transition">
-      <img src="block.jpeg" class="h-48 w-full object-cover">
-      <div class="p-6">
-        <h2 class="text-xl font-semibold">Just one more block</h2>
-        <p class="text-white/60 mt-3">Hehe, try again...</p>
-      </div>
-    </div>
-        <div onclick="openBlog(3)" class="cursor-pointer glass rounded-2xl overflow-hidden border border-white/10 hover:scale-[1.02] transition">
-      <img src="rg.jpg" class="h-48 w-full object-cover">
-      <div class="p-6">
-        <h2 class="text-xl font-semibold">Get punished for pressing space at the wrong time</h2>
-        <p class="text-white/60 mt-3">It's not squid game, promise...</p>
-      </div>
-    </div>
-    <div onclick="openBlog(4)" class="cursor-pointer glass rounded-2xl overflow-hidden border border-white/10 hover:scale-[1.02] transition">
-      <img src="os.webp" class="h-48 w-full object-cover">
-      <div class="p-6">
-        <h2 class="text-xl font-semibold">Tiny Operating System in Browser</h2>
-        <p class="text-white/60 mt-3">Building a desktop-like system using JavaScript...</p>
-      </div>
-    </div>
-    <div onclick="openBlog(5)" class="cursor-pointer glass rounded-2xl overflow-hidden border border-white/10 hover:scale-[1.02] transition">
-      <img src="dis.webp" class="h-48 w-full object-cover">
-      <div class="p-6">
-        <h2 class="text-xl font-semibold">Self-Destruct Messages Platform</h2>
-        <p class="text-white/60 mt-3">A small experiment with temporary messaging...</p>
-      </div>
-    </div>
-    
-  </div>
-</main>
-
-<div id="modal" class="hidden fixed inset-0 bg-black/70 backdrop-blur-xl flex items-center justify-center p-6">
-
-  <div class="glass max-w-4xl w-full max-h-[85vh] overflow-y-auto rounded-2xl p-8 relative border border-white/10">
-
-    <button onclick="closeBlog()" class="absolute top-4 right-4 text-white/70 text-xl">✕</button>
-
-    <div id="content" class="space-y-4 text-white/80 leading-7"></div>
-
-  </div>
+<header class="sticky top-0 z-40 border-b border-white/8 bg-black/25 backdrop-blur-xl">
+<div class="max-w-7xl mx-auto px-5 md:px-8">
+<div class="flex items-center justify-between py-4">
+<a href="index.html" class="text-left">
+<div class="text-lg md:text-xl font-semibold tracking-tight">
+Tayyaba Shaikh
 </div>
-
+<div class="text-xs text-emerald-200/70">
+Frontend Developer • Content Writer • IT Student
+</div>
+</a>
+<nav class="flex flex-wrap items-center justify-end gap-4 md:gap-7 text-sm text-emerald-50/80">
+<a class="nav-link" href="index.html">Home</a>
+<a class="nav-link" href="projects.html">Projects</a>
+<a class="nav-link" href="skills.html">Skills</a>
+<a class="nav-link" href="journey.html">Journey</a>
+<a class="nav-link" href="facts.html">Facts</a>
+<a class="nav-link" href="links.html">Links</a>
+<a class="nav-link" href="blogs.html">Blogs</a>
+<a class="nav-link" href="certificates.html">Certificates</a>
+<a class="nav-link" href="contact.html">Contact</a>
+</nav>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 py-16">
+<h1 class="text-4xl font-semibold mb-10">Blogs</h1>
+<div class="grid md:grid-cols-2 gap-6">    
+<div onclick="openBlog(0)" class="cursor-pointer glass rounded-2xl overflow-hidden border border-white/10 hover:scale-[1.02] transition">
+<img src="bored.png" class="h-48 w-full object-cover">
+<div class="p-6">
+<h2 class="text-xl font-semibold">Are We Getting Bored More Easily Than Before?</h2>
+<p class="text-white/60 mt-3">A reflection on attention, boredom, and modern digital habits...</p>
+</div>
+</div>    
+<div onclick="openBlog(1)" class="cursor-pointer glass rounded-2xl overflow-hidden border border-white/10 hover:scale-[1.02] transition">
+<img src="EB.jpg" class="h-48 w-full object-cover">
+<div class="p-6">
+<h2 class="text-xl font-semibold">I tried making a Spotify clone</h2>
+<p class="text-white/60 mt-3">But ended up making this instead...</p>
+</div>
+</div>
+<div onclick="openBlog(2)" class="cursor-pointer glass rounded-2xl overflow-hidden border border-white/10 hover:scale-[1.02] transition">
+<img src="block.jpeg" class="h-48 w-full object-cover">
+<div class="p-6">
+<h2 class="text-xl font-semibold">Just one more block</h2>
+<p class="text-white/60 mt-3">Hehe, try again...</p>
+</div>
+</div>
+<div onclick="openBlog(3)" class="cursor-pointer glass rounded-2xl overflow-hidden border border-white/10 hover:scale-[1.02] transition">
+<img src="rg.jpg" class="h-48 w-full object-cover">
+<div class="p-6">
+<h2 class="text-xl font-semibold">Get punished for pressing space at the wrong time</h2>
+<p class="text-white/60 mt-3">It's not squid game, promise...</p>
+</div>
+</div>
+<div onclick="openBlog(4)" class="cursor-pointer glass rounded-2xl overflow-hidden border border-white/10 hover:scale-[1.02] transition">
+<img src="os.webp" class="h-48 w-full object-cover">
+<div class="p-6">
+<h2 class="text-xl font-semibold">Tiny Operating System in Browser</h2>
+<p class="text-white/60 mt-3">Building a desktop-like system using JavaScript...</p>
+</div>
+</div>
+<div onclick="openBlog(5)" class="cursor-pointer glass rounded-2xl overflow-hidden border border-white/10 hover:scale-[1.02] transition">
+<img src="dis.webp" class="h-48 w-full object-cover">
+<div class="p-6">
+<h2 class="text-xl font-semibold">Self-Destruct Messages Platform</h2>
+<p class="text-white/60 mt-3">A small experiment with temporary messaging...</p>
+</div>
+</div>  
+</div>
+</main>
+<div id="modal" class="hidden fixed inset-0 bg-black/70 backdrop-blur-xl flex items-center justify-center p-6">
+<div class="glass max-w-4xl w-full max-h-[85vh] overflow-y-auto rounded-2xl p-8 relative border border-white/10">
+<button onclick="closeBlog()" class="absolute top-4 right-4 text-white/70 text-xl">✕</button>
+<div id="content" class="space-y-4 text-white/80 leading-7"></div>
+</div>
+</div>
 <script>
 const blogs = [
-  {
-    title: "Are We Getting Bored More Easily Than Before?",
-    image: "bored.png",
-    content: `<p>I don't know if you've noticed this too, but it feels like being bored has become <i>impossible.</i> Okay almost impossible.
+{
+title: "Are We Getting Bored More Easily Than Before?",
+image: "bored.png",
+content: `<p>I don't know if you've noticed this too, but it feels like being bored has become <i>impossible.</i> Okay almost impossible.
 
 A few years ago, sitting around doing nothing wasn't a big deal. If you were waiting for a
 bus, <i>you waited.</i> If you were on a train, maybe you stared out the window or got lost in your
@@ -180,11 +178,11 @@ Maybe.<br>
 Or maybe we've become so good at escaping boredom that we've forgotten it sometimes
 serves a purpose.</p>
 `
-  },
+},
 {
-  title: "I Tried Making a Spotify Clone and Ended Up Making This Instead :)",
-  image: "EB.jpg",
-  content: `I originally wanted to make a Spotify clone.
+title: "I Tried Making a Spotify Clone and Ended Up Making This Instead :)",
+image: "EB.jpg",
+content: `I originally wanted to make a Spotify clone.
 
 Somewhere along the way, I stopped trying to make a Spotify clone and started building my own music player.
 
@@ -232,9 +230,9 @@ Drop your favorite tracks in the comments and I'll add them to the rotation! :D`
 },
 
 {
-  title: "Just One More Block",
-  image: "block.jpeg",
-  content: `Ever opened a game thinking, "I'll play for just a minute"?
+title: "Just One More Block",
+image: "block.jpeg",
+content: `Ever opened a game thinking, "I'll play for just a minute"?
 
 Yeah, that's how this started too.
 
@@ -276,9 +274,9 @@ I'd love to know your highest score :))`
 },
   
 {
-  title: "Get Punished For Pressing Space at the Wrong Time",
-  image: "rg.jpg",
-  content: `A few days ago, I played Google's Red Light, Green Light game and immediately had the dangerous thought every developer eventually has:
+title: "Get Punished For Pressing Space at the Wrong Time",
+image: "rg.jpg",
+content: `A few days ago, I played Google's Red Light, Green Light game and immediately had the dangerous thought every developer eventually has:
 
 <i>How hard can it be to build something like this?</i>
 
@@ -337,9 +335,9 @@ So if you decide to try it, I'd love to know:
 Live Link: <a href="https://notthatslayer.github.io/red-green-light/" target="_blank">Click Here</a>`
 },
 {
-    title: "A Tiny Operating System in the Browser",
-    image: "os.webp",
-    content: `I Built a Tiny Operating System in the Browser (For Absolutely No Practical Reason T-T)
+title: "A Tiny Operating System in the Browser",
+image: "os.webp",
+content: `I Built a Tiny Operating System in the Browser (For Absolutely No Practical Reason T-T)
 
 One of my favorite things about learning web development is building things that make me stop and think: "Hold on, can I actually make this?"
 This time, the answer was:<i>"kinda?"</i>
@@ -399,9 +397,9 @@ Project link: <a href="https://notthatslayer.github.io/Mini-OS/">Click ME</a>
   },
 
 {
-    title: "A Platform Where Messages Self-Destruct After a Minute",
-    image: "dis.webp",
-    content: `Have you ever had a thought you just needed to get out of your head, but also didn't want it sitting around forever?
+title: "A Platform Where Messages Self-Destruct After a Minute",
+image: "dis.webp",
+content: `Have you ever had a thought you just needed to get out of your head, but also didn't want it sitting around forever?
 
 That idea stuck with me for a while, and a lot of platforms inspired me to create this.
 
@@ -452,31 +450,24 @@ Just something I built while experimenting and learning JavaScript a bit more.
 <u>I'll probably look at it later and think of things I could improve, but okay.</u>
 
 <i>For now, it exists for a minute at a time :)</i>`
-  }
+}
 ];
 
 function openBlog(i){
-  const blog = blogs[i];
-
-  const container = document.getElementById("content");
-
-  container.innerHTML = `
-    <img src="${blog.image}" class="rounded-xl mb-4">
-
-    <h2 class="text-2xl font-semibold mb-4">${blog.title}</h2>
-
-    ${blog.content.split("\n").map(p =>
-      `<p>${p.trim()}</p>`
-    ).join("")}
-  `;
-
-  document.getElementById("modal").classList.remove("hidden");
+const blog = blogs[i];
+const container = document.getElementById("content");
+container.innerHTML = `
+<img src="${blog.image}" class="rounded-xl mb-4">
+<h2 class="text-2xl font-semibold mb-4">${blog.title}</h2>
+${blog.content.split("\n").map(p =>
+`<p>${p.trim()}</p>`
+).join("")}
+`;
+document.getElementById("modal").classList.remove("hidden");
 }
-
 function closeBlog(){
-  document.getElementById("modal").classList.add("hidden");
+document.getElementById("modal").classList.add("hidden");
 }
 </script>
-
 </body>
 </html>
